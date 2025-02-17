@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travely</title>
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- script bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- font awsome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <main>
+        <header class="">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <div class="container-fluid ps-4 pe-4">
+                    <a class="navbar-brand me-5" href="#">Travely</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-5 mb-2 mb-lg-0  ">
+                            <li class="nav-item">
+                                <a class="nav-link active ps-3 pe-3" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-3 pe-3" href="#">Life style</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-3 pe-3" href="#">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ps-3 pe-3" href="#">About</a>
+                            </li>
+                            <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li> -->
+                            <!-- <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li> -->
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search ">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                        <button class="btn ms-auto">
+                            <i class="fa-solid fa-circle-user fs-2"></i></button>
+                    </div>
+                </div>
+            </nav>
+            <div class="container-fluid py-3 ps-4 pe-4">
+                <div class="nav-wrapper">
+                    <!-- Left Scroll Button -->
+                    <button class="btn btn-light border btn-circle me-2" id="scrollLeft">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+
+                    <!-- Scrollable Nav -->
+                    <div class="nav-scroll">
+                        <a href="#" class="nav-item "><i class="fas fa-water"></i><span>Lake</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-home"></i><span>Cabins</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-gem"></i><span>Off-the-grid</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-box"></i><span>Containers</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-utensils"></i><span>Luxe</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-circle"></i><span>Domes</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-mountain"></i><span>Top of the world</span></a>
+                        <a href="#" class="nav-item active"><i class="fas fa-bed"></i><span>Rooms</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-water"></i><span>Lake</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-water"></i><span>Lake</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-water"></i><span>Lake</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-water"></i><span>Lake</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-water"></i><span>Lake</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-water"></i><span>Lake</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-water"></i><span>Lake</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-home"></i><span>Cabins</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-home"></i><span>Cabins</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-home"></i><span>Cabins</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-home"></i><span>Cabins</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-home"></i><span>Cabins</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-home"></i><span>Cabins</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-home"></i><span>Cabins</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-gem"></i><span>Off-the-grid</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-gem"></i><span>Off-the-grid</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-gem"></i><span>Off-the-grid</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-gem"></i><span>Off-the-grid</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-gem"></i><span>Off-the-grid</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-gem"></i><span>Off-the-grid</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-gem"></i><span>Off-the-grid</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-box"></i><span>Containers</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-box"></i><span>Containers</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-box"></i><span>Containers</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-box"></i><span>Containers</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-box"></i><span>Containers</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-box"></i><span>Containers</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-box"></i><span>Containers</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-utensils"></i><span>Luxe</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-utensils"></i><span>Luxe</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-utensils"></i><span>Luxe</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-utensils"></i><span>Luxe</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-utensils"></i><span>Luxe</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-utensils"></i><span>Luxe</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-utensils"></i><span>Luxe</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-circle"></i><span>Domes</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-circle"></i><span>Domes</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-circle"></i><span>Domes</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-circle"></i><span>Domes</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-circle"></i><span>Domes</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-circle"></i><span>Domes</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-circle"></i><span>Domes</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-mountain"></i><span>Top of the world</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-mountain"></i><span>Top of the world</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-mountain"></i><span>Top of the world</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-mountain"></i><span>Top of the world</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-mountain"></i><span>Top of the world</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-mountain"></i><span>Top of the world</span></a>
+                        <a href="#" class="nav-item"><i class="fas fa-mountain"></i><span>Top of the world</span></a>
+                    </div>
+
+                    <!-- Right Scroll Button -->
+                    <button class="btn btn-light border btn-circle ms-2" id="scrollRight">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+
+                    <!-- Filter Button -->
+                    <button class="btn btn-outline-secondary ms-3 d-flex align-items-center ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="16" viewBox="0 0 22 16" fill="none">
+                            <path d="M1.00019 13.02H4.00012" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10"
+                                stroke-linecap="square" stroke-linejoin="round" />
+                            <path d="M8.99999 13.02H20.998" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10"
+                                stroke-linecap="square" stroke-linejoin="round" />
+                            <path
+                                d="M6.40002 11C5.29545 11 4.40002 11.8954 4.40002 13C4.40002 14.1046 5.29545 15 6.40002 15C7.50459 15 8.40002 14.1046 8.40002 13C8.40002 11.8954 7.50459 11 6.40002 11Z"
+                                stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M20.9989 7.97998H17.9999" stroke="#292D32" stroke-width="1.5"
+                                stroke-miterlimit="10" stroke-linecap="square" stroke-linejoin="round" />
+                            <path d="M14.0001 7.97949H1.00073" stroke="#292D32" stroke-width="1.5"
+                                stroke-miterlimit="10" stroke-linecap="square" stroke-linejoin="round" />
+                            <path
+                                d="M16.0001 10C17.1046 10 18.0001 9.10457 18.0001 8C18.0001 6.89543 17.1046 6 16.0001 6C14.8955 6 14.0001 6.89543 14.0001 8C14.0001 9.10457 14.8955 10 16.0001 10Z"
+                                stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M1.00069 3.04053L6.00031 3.04053" stroke="#292D32" stroke-width="1.5"
+                                stroke-miterlimit="10" stroke-linecap="square" stroke-linejoin="round" />
+                            <path
+                                d="M20.9984 3.77002H21.7484V2.27002H20.9984V3.77002ZM9.99999 3.77002H20.9984V2.27002H9.99999V3.77002Z"
+                                fill="#292D32" />
+                            <path
+                                d="M8 1C6.89543 1 6 1.89543 6 3C6 4.10457 6.89543 5 8 5C9.10457 5 10 4.10457 10 3C10 1.89543 9.10457 1 8 1Z"
+                                stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        <span class="ms-2">filter</span>
+                    </button>
+                    <div class="form-check form-switch d-flex align-items-center px-2">
+                        <label class="form-check-label me-auto" for="flexSwitchCheckDefault">with taxes</label>
+                        <input class="form-check-input ms-2" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="hero d-flex align-items-start">
+            <div class="container-fluid py-3 ps-4 pe-4">
+                <div class="row justify-content-start ms-4">
+                    <div class="col-md-8 hero-content text-md-start text-center">
+                        <h1 class="display-4 fw-bold">Hotel, Travel
+                            & experiences </h1>
+                        <p class="lead">Accompanying us, you have a trip full of experiences. With Chisfis, booking
+                            accommodation, resort villas, hotels</p>
+                        <a href="#" class="btn btn-primary">Start your journey</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-overlay">
+                <!-- <img src="assets/images/hero_ps_1.png" alt=""> -->
+                <!-- <img src="assets/images/hero_ps_2.png" alt="">
+            <img src="assets/images/hero_ps_3.png" alt=""> -->
+            </div>
+        </div>
+        <button id="backToTop" class="btn btn-primary position-fixed bottom-0 end-0 m-3">
+            ↑ Back to Top
+        </button>
+        <div class="search-bar">
+            <!-- Location -->
+            <div class="search-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                    <label class="fw-bold d-block">Location</label>
+                    <input type="text"class="search_placeh" placeholder="Where are you going?">
+                </div>
+            </div>
+            <div class="divider"></div>
+
+            <!-- Check-in -->
+            <div class="search-item">
+                <i class="far fa-calendar-alt"></i>
+                <div>
+                    <label class="fw-bold d-block ">Check in</label>
+                    <input type="date"class="search_placeh">
+                </div>
+            </div>
+            <div class="divider"></div>
+
+            <!-- Check-out -->
+            <div class="search-item">
+                <i class="far fa-calendar-alt"></i>
+                <div>
+                    <label class="fw-bold d-block">Check out</label>
+                    <input type="date" class="search_placeh">
+                </div>
+            </div>
+            <div class="divider"></div>
+
+            <!-- Guests -->
+            <div class="search-item">
+                <i class="fas fa-user-friends"></i>
+                <div>
+                    <label class="fw-bold d-block ">Guests</label>
+                    <input type="number" class="search_placeh" placeholder="Add guests">
+                </div>
+            </div>
+
+            <!-- Search Button -->
+            <button class="search-btn  border btn-circle ms-3">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </main>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const scrollContainer = document.querySelector(".nav-scroll");
+            const scrollLeft = document.getElementById("scrollLeft");
+            const scrollRight = document.getElementById("scrollRight");
+            const navItems = document.querySelectorAll(".nav-item");
+
+            scrollRight.addEventListener("click", function () {
+                scrollContainer.scrollBy({ left: 300, behavior: "smooth" });
+            });
+
+            scrollLeft.addEventListener("click", function () {
+                scrollContainer.scrollBy({ left: -300, behavior: "smooth" });
+            });
+
+            navItems.forEach(item => {
+                item.addEventListener("click", function () {
+                    document.querySelector(".nav-item.active")?.classList.remove("active");
+                    this.classList.add("active");
+                });
+            });
+        });
+
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#backToTop").click(function () {
+                $("html, body").animate({ scrollTop: 0 }, 500);
+            });
+        });
+    </script>
+
+</body>
+
+</html>

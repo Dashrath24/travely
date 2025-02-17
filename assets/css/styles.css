@@ -1,0 +1,263 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 99999999999999999px;
+}
+
+
+:root {
+    --primary-font: "poppins", serif;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.slider {
+    width: 50%;
+    margin: 100px auto;
+}
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
+
+.slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: .2;
+}
+
+.slick-active {
+    opacity: .5;
+}
+
+.slick-current {
+    opacity: 1;
+}
+
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-wrap: nowrap;
+}
+
+/* Scrollable Navbar */
+.nav-scroll {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    max-width: 100%;
+    flex-grow: 1;
+}
+
+.nav-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+/* Navbar Items */
+.nav-item {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: #666;
+    text-decoration: none;
+}
+
+.nav-item.active {
+    color: black;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+
+/* Circular Buttons */
+.btn-circle {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    flex-shrink: 0;
+}
+
+.form-check-label {
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.custom-switch {
+    float: none !important;
+    /* Remove Bootstrap float */
+    margin: 0 !important;
+    /* Reset margins */
+    position: relative;
+    /* Ensure proper alignment */
+    transform: translateY(1px);
+    /* Slight adjustment if needed */
+}
+
+@media (max-width: 992px) {
+    .nav-scroll {
+        width: 100% !important;
+    }
+
+    .btn-outline-secondary,
+    .form-switch {
+        display: none !important;
+    }
+}
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    background: url("../images/hero_bg.png"), url("../images/hero_filter.png");
+    background-size: cover, contain;
+    background-position: center, bottom right;
+    background-repeat: no-repeat, no-repeat;
+
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    top: 5rem;
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+/* Search Bar */
+.search-bar {
+    position: absolute;
+    bottom: -7rem;
+    /* Adjust positioning */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 900px;
+    background: white;
+    border-radius: 50px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Input Section */
+.search-item {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.search-item input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+}
+
+.search-item i {
+    color: #6c757d;
+}
+
+/* Pipe Divider */
+.divider {
+    width: 1px;
+    height: 40px;
+    background-color: #ddd;
+}
+
+/* Search Button */
+.search-btn {
+
+    background: #5a3cd2;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .search-bar { display: none;
+        backdrop-filter: blur(10px);
+        background: rgba(0, 0, 0, 0.2);
+        position: absolute;
+        left: 764px;
+        flex-direction: column;
+        width: 250px;
+        border-radius: 20px;
+        padding: 15px;
+        color: #dfdfdf;
+    }
+
+    .search-item i {
+        color: #dfdfdf;
+   
+}
+
+.search-item {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.divider {
+    display: none;
+}
+
+.search-btn {
+    width: 100%;
+    border-radius: 30px;
+    margin-top: 10px;
+    gap: 9px;
+    vertical-align: middle;
+}
+
+.search-btn::after {
+    content: 'search';
+} 
+.search_placeh{
+    color: #959595;
+}
+.search_placeh::placeholder {
+    color:  #959595; }
+.hero{
+    position: relative!important;
+}}
